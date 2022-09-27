@@ -21,10 +21,10 @@ header{
     align-items: center;
 }
 .list-header li{
-    padding: 20px;
+    padding: 15px;
     margin: 5px;
     list-style: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 a{
     text-decoration: none;
@@ -103,51 +103,50 @@ ul{
     width: 500px;
 }
 .box-projects{
-    background-color: cadetblue;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
-    box-shadow: 50px;
+    text-align: center;
+}
+.div-projects{
+    border: 3px#239B56 solid;
+    border-radius: 15%;
+    margin: 20px;
+    background-color: #bcc084;
 }
 .img-projects{
-    padding: 80px;
-    margin: 60px;
-    border: 5px#239B56 solid;
-    border-radius: 15%;
-    max-width: 300px;
+    width: 230px;
+    height: 230px;
 }
 .box-contact{
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 150px 80px 80px 80px;
+    width: auto;
+    height: auto;
 }
-.contact{
-    background-color: palevioletred; 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 300px;
-    height: 350px;
+.contact, .write-me{
+    width: 350px;
+    height: 400px;
     border-radius: 2%;
-    border: 2px #239B56 solid;
+    background-color: #B3BE2C; 
+    border: 3px #239B56 solid;
     margin: 10px;
+    padding: 10px;
 }
 .write-me{
-    background-color: #B3BE2C;
-    width: 350px;
-    height: 350px;
-    border-radius: 2%;
-    border: 2px #239B56 solid;
-    margin: 10px;
+    width: 400px;
+    height: 400px;
+}
+input, textarea{
+    background-color: #c5d32a;
+    border-radius: 5%;
+    border: 2px solid #239B56;
 }
 strong{
     color: black;
-}
-i{
-    width: 10px;
-    height: 10px;
 }
 #boton{
     display: flex;
@@ -161,23 +160,16 @@ i{
 /*inicio footer*/
 footer{
     background-color: #58D68D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
+    padding: 50px;
 }
-.list-footer{
+.nav-footer{
     display: flex;
-    justify-content: space-between;
     align-content: center;
-    border: 3px black solid;
-    margin: 20px;
-    padding: 10px;
-    
+    justify-content: center;
+    flex-direction: column;
 }
-.logos-footer li {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.list-footer, .logo-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

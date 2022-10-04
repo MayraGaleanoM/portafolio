@@ -91,9 +91,9 @@ ul{
 } 
 .section-knowledge .box-knowledge div{
     padding: 10px;
+    margin: 10px;
     border: 5px var(--bordesVerdeOScuro) double;
     border-radius: 30%;
-    margin: 10px;
     background-color: var(--fondoAmarillo);
 }
 .imagen-lenguajes img{
@@ -103,11 +103,11 @@ ul{
 }
 /*frase*/
 .section-phrase{
-    background-color: var(--fondoVerdeClaro);
     text-align: center;
     padding: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--fondoVerdeClaro);
 }
 /*proyectos*/
 .section-projects{
@@ -130,9 +130,9 @@ ul{
     text-align: center;
 }
 .cont-projects{
+    margin: 20px;
     border: 3px var(--bordesVerdeOScuro) solid;
     border-radius: 15%;
-    margin: 20px;
     background-color: var(--fondoGris);
 }
 .img-projects{
@@ -181,8 +181,8 @@ strong{
 /*fin de main*/
 /*inicio footer*/
 footer{
-    background-color: var(--fondoVerdeClaro);
     padding: 50px;
+    background-color: var(--fondoVerdeClaro);
 }
 .nav-footer{
     display: flex;
@@ -196,11 +196,14 @@ footer{
     align-items: center;
 }
 @media screen and (max-width:880px) {
+    header{
+        max-width: 880px;
+    }
     .section-presentation{ 
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 180px 70px 100px 70px;
+        padding: 180px 40px 100px 40px;
         margin: 30px;
     }
     .list-header li{
@@ -214,7 +217,7 @@ footer{
         padding: 110px 50px 50px 50px;
     }
     .box-knowledge{
-        width: 800px;
+        max-width: 700px;
         margin: 40px;
     } 
     .section-knowledge .box-knowledge div{

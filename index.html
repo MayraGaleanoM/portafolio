@@ -8,6 +8,14 @@
     <!--google-->
     <meta name="googlebot" content="index,follow"/>
     <meta name="robots" content="index,follow">
+    <!--Geo tags-->
+    <meta name="ICBM" content="34° 36', 58° 26'">
+    <meta name="geo.position" content="34° 36', 58° 26'">
+    <meta name="geo.region" content="AR">
+    <!--Author tags-->
+    <meta rel="me" href="mail:maygaleano00@gmail.com">
+    <meta rel="me" href="sms:+549111550381289">
+    <meta rel="archives" href="https://www.instagram.com/maayragaleano/">
     <!--link icons contact-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -17,20 +25,20 @@
 </head>
 <body>
     <!--Inicio Encabezado-->
-    <header>
+    <header tabindex="1">
         <nav>
             <ul class="list-header">
-                <li><a class="decoration" href="#section-hola">HOLA!</a></li>
-                <li><a class="decoration" href="#section-conocimientos">CONOCIMIENTOS</a></li>
-                <li><a class="decoration" href="#section-proyectos">PROYECTOS</a></li>
-                <li><a href="#section-contacto"><button>CONTACTO</button></a></li>
+                <li tabindex="2"><a class="decoration" href="#section-hola">HOLA!</a></li>
+                <li tabindex="3"><a class="decoration" href="#section-conocimientos">CONOCIMIENTOS</a></li>
+                <li tabindex="4"><a class="decoration" href="#section-proyectos">PROYECTOS</a></li>
+                <li tabindex="5"><a href="#section-contacto"><button>CONTACTO</button></a></li>
             </ul>
         </nav>
     </header>
     <!--Fin Encabezado-->
     <!--Inicio cuerpo-->
     <main>
-        <section tabindex="0" class="section-presentation" id="section-hola">
+        <section tabindex="6" class="section-presentation" id="section-hola">
             <div>
                 <h2>Hola! Soy</a></h2>
                 <h1>Mayra Galeano</h1>
@@ -40,8 +48,9 @@
             <div class="imagen-principal">
                 <img src="imagenes/progamadora.svg" alt="dibujo de una mujer de espaldas con una computadora progamando">
             </div>
-        </section><!--conocimientos-->
-        <section tabindex="1" class="section-knowledge" id="section-conocimientos">
+        </section>
+        <!--conocimientos-->
+        <section tabindex="7" class="section-knowledge" id="section-conocimientos">
             <h3>Mis Conocimientos</h3>
             <p>En esta sección podras ver los conocimientos que adqueri en la progamacion frontend, las formacion que tengo es por parte de ADA ITW.</p>
             <div class="box-knowledge">
@@ -54,12 +63,12 @@
             </div>
         </section>
         <!---frase--->
-        <section tabindex="2" class="section-phrase">
+        <section tabindex="8" class="section-phrase">
             <blockquote>“Las limitaciones viven solo en nuestras mentes.<br> Pero si usamos nuestra imaginación, nuestras posibilidades se vuelven ilimitadas.”</blockquote><br>
             <h4>Jamie Paolinetti</h4>
         </section>
         <!--section proyectos-->
-        <section tabindex="3" class="section-projects" id="section-proyectos">
+        <section tabindex="9" class="section-projects" id="section-proyectos">
             <div class="edicion-projects">
                 <h3>Mis Proyectos</h3>
                 <p>En esta sección podras ver mis proyectos actuales.</p>
@@ -95,8 +104,8 @@
                <p>Buscador de peliculas</p>
             </div>
         </section>
-        <section tabindex="" class="box-contact" id="section-contacto">
-            <section tabindex="4">
+        <section tabindex="10" class="box-contact" id="section-contacto">
+            <section tabindex="11">
                 <!-- seccion contacto-->
                 <div class="contact">
                     <h3>Contactame</h3>
@@ -116,45 +125,46 @@
                         </li>
                     </ul>
                 </div>
-            </section><!-- seccion escribeme -->
-            <nav class="write-me">
+            </section>
+            <!-- seccion escribeme -->
+            <nav tabindex="12" class="write-me">
                 <h3>Escribime</h3>
-                <form>
+                <form tabindex="13">
                     <label for="name">Nombre*</label>
-                    <input id="iname" type="text" name="name" placeholder="ej. Julia"><br>
+                    <input tabindex="14" id="iname" type="text" name="name" placeholder="ej. Julia"><br>
                     <label for="surname">Apellido*</label>
-                    <input id="isurname" type="text" name="surname" placeholder="ej. Lopez"><br>
+                    <input tabindex="15" id="isurname" type="text" name="surname" placeholder="ej. Lopez"><br>
                     <label for="iemail">Email*</label>
-                    <input id="iemail" type="email" name="text" id="email" placeholder="ej. julialopez@gmail.com"><br>
+                    <input tabindex="16" id="iemail" type="email" name="text" id="email" placeholder="ej. julialopez@gmail.com"><br>
                     <label for="text">Mensaje</label><br>
-                    <textarea id="text" type="text" name="escribime" cols="20" rows="10"></textarea><br>
+                    <textarea tabindex="17" id="text" type="text" name="escribime" cols="20" rows="10"></textarea><br>
                     <p>Campos Obligatorios*</p><br>
-                    <input id="boton" type="submit" value="Enviar"/>
+                    <input tabindex="18" id="boton" type="submit" value="Enviar"/>
                 </form>
             </nav>
         </section>
     </main>
     <!--Fin cuerpo-->
     <!--Inicion pie de pagina-->
-    <footer>
+    <footer tabindex="19">
         <div class="div-footer">
             <ul class="list-footer">
-                <li><a href="#section-hola">Hola!</a></li>
-                <li><a href="#section-conocimientos">Conocimientos</a></li>
-                <li><a href="#section-proyectos">Proyectos</a></li>
-                <li><a href="#section-contacto">Contacto</a></li>
+                <li tabindex="20"><a href="#section-hola">Hola!</a></li>
+                <li tabindex="22"><a href="#section-conocimientos">Conocimientos</a></li>
+                <li tabindex="24"><a href="#section-proyectos">Proyectos</a></li>
+                <li tabindex="26"><a href="#section-contacto">Contacto</a></li>
             </ul>
             <ul class="logo-footer">
-                <li>
+                <li tabindex="21">
                     <a href="https://twitter.com/home"><i class="devicon-twitter-original colored"><strong>Twitter</strong></i></a>
                 </li>
-                <li>
+                <li tabindex="23">
                     <a href="https://github.com/github"><i class="fa-brands fa-github"><strong>GitHub</strong></i></a>
                 </li>
-                <li>
+                <li tabindex="25">
                     <a href="https://ar.linkedin.com/"><i class="devicon-linkedin-plain colored"><strong>Linkedin</strong></i></a>
                 </li>
-                <li>
+                <li tabindex="27">
                     <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-solid fa-envelope"><strong>Mail</strong></i></a>
                 </li>
             </ul>

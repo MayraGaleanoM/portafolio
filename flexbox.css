@@ -150,6 +150,7 @@ ul{
     padding: 150px 80px 80px 80px;
     width: auto;
     height: auto;
+    background-color: var(--fondoGrisClaro);
 }
 .contact, .write-me{
     width: 300px;
